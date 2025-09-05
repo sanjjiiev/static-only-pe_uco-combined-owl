@@ -1,0 +1,72 @@
+Prefix(:=<http://www.semanticweb.org/user007/ontologies/2025/4/merged/>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://www.semanticweb.org/user007/ontologies/2025/4/merged>
+Import(<http://ffrdc.ebiquity.umbc.edu/ns/ontology/>)
+Import(<https://orbis-security.com/pe-malware-ontology>)
+
+Declaration(Class(<http://ffrdc.ebiquity.umbc.edu/ns/ontology/OSVDB>))
+Declaration(Class(<http://www.semanticweb.org/user007/ontologies/2025/4/merged#AttackMechanism>))
+############################
+#   Classes
+############################
+
+# Class: <http://capec.mitre.org/capec_v1#Indicator> (<http://capec.mitre.org/capec_v1#Indicator>)
+
+SubClassOf(<http://capec.mitre.org/capec_v1#Indicator> <http://www.semanticweb.org/user007/ontologies/2025/4/merged#AttackMechanism>)
+
+# Class: <http://capec.mitre.org/capec_v1#Observable> (<http://capec.mitre.org/capec_v1#Observable>)
+
+SubClassOf(<http://capec.mitre.org/capec_v1#Observable> <http://www.semanticweb.org/user007/ontologies/2025/4/merged#AttackMechanism>)
+
+# Class: <http://capec.mitre.org/capec_v1#Weakness> (<http://capec.mitre.org/capec_v1#Weakness>)
+
+SubClassOf(<http://capec.mitre.org/capec_v1#Weakness> <http://ffrdc.ebiquity.umbc.edu/ns/ontology/#Vulnerability>)
+
+# Class: <http://ffrdc.ebiquity.umbc.edu/ns/ontology/Exploit> (<http://ffrdc.ebiquity.umbc.edu/ns/ontology/Exploit>)
+
+SubClassOf(<http://ffrdc.ebiquity.umbc.edu/ns/ontology/Exploit> <http://www.semanticweb.org/user007/ontologies/2025/4/merged#AttackMechanism>)
+
+# Class: <http://ffrdc.ebiquity.umbc.edu/ns/ontology/KillChainPhase> (<http://ffrdc.ebiquity.umbc.edu/ns/ontology/KillChainPhase>)
+
+SubClassOf(<http://ffrdc.ebiquity.umbc.edu/ns/ontology/KillChainPhase> <http://ffrdc.ebiquity.umbc.edu/ns/ontology/KillChain>)
+
+# Class: <http://ffrdc.ebiquity.umbc.edu/ns/ontology/Malware> (<http://ffrdc.ebiquity.umbc.edu/ns/ontology/Malware>)
+
+SubClassOf(<http://ffrdc.ebiquity.umbc.edu/ns/ontology/Malware> <http://ffrdc.ebiquity.umbc.edu/ns/ontology/#Software>)
+
+# Class: <http://ffrdc.ebiquity.umbc.edu/ns/ontology/#CWE> (<http://ffrdc.ebiquity.umbc.edu/ns/ontology/#CWE>)
+
+SubClassOf(<http://ffrdc.ebiquity.umbc.edu/ns/ontology/#CWE> <http://ffrdc.ebiquity.umbc.edu/ns/ontology/#Vulnerability>)
+
+# Class: <http://ffrdc.ebiquity.umbc.edu/ns/ontology/#ExploitTarget> (<http://ffrdc.ebiquity.umbc.edu/ns/ontology/#ExploitTarget>)
+
+SubClassOf(<http://ffrdc.ebiquity.umbc.edu/ns/ontology/#ExploitTarget> <http://www.semanticweb.org/user007/ontologies/2025/4/merged#AttackMechanism>)
+
+# Class: <https://orbis-security.com/pe-malware-ontology#FileFeature> (FileFeature)
+
+SubClassOf(<https://orbis-security.com/pe-malware-ontology#FileFeature> <https://orbis-security.com/pe-malware-ontology#PEFile>)
+
+# Class: <https://orbis-security.com/pe-malware-ontology#PEFile> (PEFile)
+
+SubClassOf(<https://orbis-security.com/pe-malware-ontology#PEFile> <http://ffrdc.ebiquity.umbc.edu/ns/ontology/Malware>)
+
+# Class: <https://orbis-security.com/pe-malware-ontology#Section> (Section)
+
+SubClassOf(<https://orbis-security.com/pe-malware-ontology#Section> <https://orbis-security.com/pe-malware-ontology#PEFile>)
+
+# Class: <https://orbis-security.com/pe-malware-ontology#SectionFeature> (SectionFeature)
+
+SubClassOf(<https://orbis-security.com/pe-malware-ontology#SectionFeature> <https://orbis-security.com/pe-malware-ontology#Section>)
+
+# Class: <https://orbis-security.com/pe-malware-ontology#SectionFlag> (SectionFlag)
+
+SubClassOf(<https://orbis-security.com/pe-malware-ontology#SectionFlag> <https://orbis-security.com/pe-malware-ontology#SectionFeature>)
+
+
+)
